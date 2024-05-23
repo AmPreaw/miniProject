@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.question {
+  margin-bottom: 20px;
+}
+.question p {
+  font-weight: bold;
+}
+.question div {
+  margin-left: 20px;
+}
+
+.subTopic {
+  margin: 20px;
+}

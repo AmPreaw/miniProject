@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DISC Personality</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4">DISC Personality</h1>
+      <form id="discForm">
+        <div class="question mb-4">
+          <p>1. ในการทำงาน สิ่งที่สำคัญที่สุดสำหรับฉันคือ...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q1"
+              value="D"
+              id="q1d"
+            />
+            <label class="form-check-label" for="q1d"
+              >1) ทำทุกอย่างให้เสร็จแล้วรอดูผลลัพธ์ว่าเป็นอย่างไร</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q1"
+              value="I"
+              id="q1i"
+            />
+            <label class="form-check-label" for="q1i"
+              >2) การได้รับคำชมจากเพื่อนร่วมงานและมีอิสระในการทำงาน</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q1"
+              value="S"
+              id="q1s"
+            />
+            <label class="form-check-label" for="q1s"
+              >3) การช่วยเหลือเพื่อนร่วมงานและอยู่ในสภาพแวดล้อมที่สงบ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q1"
+              value="C"
+              id="q1c"
+            />
+            <label class="form-check-label" for="q1c"
+              >4)
+              การได้รู้อย่างแน่ชัดว่าตนเองต้องการอะไรและต้องทำงานหนึ่งให้เสร็จก่อนจะไปทำอีกงาน</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>
+            2. เวลาที่ใครสักคนเสนอความคิดเห็นหรือข้อสรุป แล้วฉันไม่เห็นด้วย
+            ฉันมักจะ...
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q2"
+              value="D"
+              id="q2d"
+            />
+            <label class="form-check-label" for="q2d"
+              >1) บอกเขาว่าฉันไม่เห็นด้วย</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q2"
+              value="I"
+              id="q2i"
+            />
+            <label class="form-check-label" for="q2i"></label>
+              2) ถามข้อมูลเพิ่มเติม</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q2"
+              value="S"
+              id="q2s"
+            />
+            <label class="form-check-label" for="q2s"
+              >3) พูดอะไรตลกๆ กลบเกลื่อน</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q2"
+              value="C"
+              id="q2c"
+            />
+            <label class="form-check-label" for="q2c"
+              >4) พยักหน้าและไม่พูดอะไร </label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>3. เวลาที่ทำงานกันเป็นทีม แล้วเจอปัญหาที่ยากๆ ฉันมักจะพูดว่า...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q3"
+              value="D"
+              id="q3d"
+            />
+            <label class="form-check-label" for="q3d"
+              >1) มาหาข้อสรุปกันเถอะ!</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q3"
+              value="I"
+              id="q3i"
+            />
+            <label class="form-check-label" for="q3i"
+              >2) อย่าคิดมาก ตามน้ำไปนั่นแหละ!</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q3"
+              value="S"
+              id="q3s"
+            />
+            <label class="form-check-label" for="q3s"
+              >3) ทุกคนรู้สึกยังไงกันบ้าง? ฉันอยากแน่ใจว่าทุกคนสบายใจดี</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q3"
+              value="C"
+              id="q3c"
+            />
+            <label class="form-check-label" for="q3c"
+              >4) มาคิดให้รอบคอบกว่านี้ดีไหม? พวกเรามีข้อมูลทั้งที่พวกเราต้องการแล้วหรอ?</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>4. ทัศนคติของฉันต่องานที่ละเอียดๆ เช่น งานสำรวจและวิเคราะห์ข้อมูล ของฉันคือ...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              value="D"
+              id="q4d"
+            />
+            <label class="form-check-label" for="q4d"
+              >1) ถ้ามันช่วยให้ได้ผลลัพธ์ที่ดีและเร็วขึ้น ฉันจะทำ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              value="I"
+              id="q4i"
+            />
+            <label class="form-check-label" for="q4i"
+              >2) เยี่ยม ฉันสนุกกับการค้นหาและวิเคราะห์ข้อมูลมาก</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              value="S"
+              id="q4s"
+            />
+            <label class="form-check-label" for="q4s"
+              >3) ถ้ามันทำให้ผู้อื่นคิดเกี่ยวกับฉันดีขึ้น ฉันจะทำ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              value="C"
+              id="q4c"
+            />
+            <label class="form-check-label" for="q4c"
+              >4) ถ้ามันช่วยผู้อื่นหรือทำให้งานมันง่ายขึ้น ฉันจะทำ</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>5. เมื่อฉันอยู่ในงานงานหนึ่งกับผู้คนมากมายที่ฉันไม่เคยเจอมาก่อน ฉันมักจะ...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              value="D"
+              id="q5d"
+            />
+            <label class="form-check-label" for="q5d"
+              >1) ไปคุยกับคนที่ฉันจำเป็นต้องคุยด้วยเพื่อทำตามวัตถุประสงค์สำหรับการเข้าร่วมงานครั้งนี้ให้บรรลุสำเร็จ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              value="I"
+              id="q5i"
+            />
+            <label class="form-check-label" for="q5i"
+              >2) พบปะและพูดคุยกับผู้คนให้ได้มากที่สุดเท่าที่จะมากได้ ก่อนที่งานจะจบ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              value="S"
+              id="q5s"
+            />
+            <label class="form-check-label" for="q5s"
+              >3) หากลุ่มเล็กๆกับคนที่ฉันรู้สึกสบายจะคุยด้วยและคุยกับเขาไม่ค่อยเก่ง</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              value="C"
+              id="q5c"
+            />
+            <label class="form-check-label" for="q5c"
+              >4) หาที่นั่งดีๆในการสังเกตการณ์ภายในงาน นั่งเงียบๆจนกว่าจะมีคนเข้ามาทัก</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>6. ฉันมองว่าตัวเองเป็นคน...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              value="D"
+              id="q6d"
+            />
+            <label class="form-check-label" for="q6d"
+              >1) ชอบงานปฏิบัติ, มุ่งมั่น, แข่งขัน</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              value="I"
+              id="q6i"
+            />
+            <label class="form-check-label" for="q6i"
+              >2) อัธยาศัยดี, สนุกสนาน, ชอบโน้มน้าวใจผู้อื่น</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              value="S"
+              id="q6s"
+            />
+            <label class="form-check-label" for="q6s"
+              >3) อดทน, ใจดี, ชอบช่วยเหลือ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              value="C"
+              id="q6c"
+            />
+            <label class="form-check-label" for="q6c"
+              >4) มีหลักการ, ยึดข้อเท็จจริง, ยึดความถูกต้อง</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>7. เมื่อฉันได้ยินว่าจะมีการเปลี่ยนแปลงเกิดขึ้น ฉันมักจะคิดว่า...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              value="D"
+              id="q7d"
+            />
+            <label class="form-check-label" for="q7d"
+              >1) มันส่งผลกระทบต่อตัวฉันอย่างไร</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              value="I"
+              id="q7i"
+            />
+            <label class="form-check-label" for="q7i"
+              >2) มันมีข้อดีอะไรซ่อนอยู่รึเปล่า</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              value="S"
+              id="q7s"
+            />
+            <label class="form-check-label" for="q7s"
+              >3) มันส่งผลต่อคนที่มีส่วนเกี่ยวข้องอย่างไร</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              value="C"
+              id="q7c"
+            />
+            <label class="form-check-label" for="q7c"
+              >4) มีผลกระทบอะไรต่องานและประสิทธิภาพในการทำงานไหม</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>8. ประโยคที่อธิบายวิธีการทำงานของฉันได้ดีที่สุดคือ...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              value="D"
+              id="q8d"
+            />
+            <label class="form-check-label" for="q8d"
+              >1) คุณต้องการให้ฉันทำงานนี้อย่างไร</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              value="I"
+              id="q8i"
+            />
+            <label class="form-check-label" for="q8i"
+              >2) ใครจะทำงานนี้กับฉัน? มีใครที่ฉันปรึกษาด้วยได้ตอนทำงานบ้าง?</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              value="S"
+              id="q8s"
+            />
+            <label class="form-check-label" for="q8s"
+              >3) ทำเสร็จแล้ว มีอะไรให้ทำอีกไหม?</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              value="C"
+              id="q8c"
+            />
+            <label class="form-check-label" for="q8c"
+              >4) วางแผนการทำงานและทำงานตามแผนที่วาง</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>9. งานแบบที่ฉันรู้สึกอยากทำมากที่สุดคือ...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q9"
+              value="D"
+              id="q9d"
+            />
+            <label class="form-check-label" for="q9d"
+              >1) งานเร่งด่วน เพราะการเปลี่ยนงานอย่างรวดเร็วทำให้เกิดการพัฒนา</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q9"
+              value="I"
+              id="q9i"
+            />
+            <label class="form-check-label" for="q9i"
+              >2) งานที่ได้ติดต่อสื่อสารกับคนอื่นเยอะๆเพื่อสร้างไอเดียและพลังงานใหม่ๆ</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q9"
+              value="S"
+              id="q9s"
+            />
+            <label class="form-check-label" for="q9s"
+              >3) งานที่ทำแล้วสบายใจ ช่วยเหลือคนในกลุ่มได้</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q9"
+              value="C"
+              id="q9c"
+            />
+            <label class="form-check-label" for="q9c"
+              >4) ทำงานคนเดียว และให้ความสนใจกับงานที่กำลังทำอยู่ เพื่อให้งานออกมาดีที่สุด</label
+            >
+          </div>
+        </div>
+        <div class="question mb-4">
+          <p>10. เมื่อฉันได้รับสายโทรศัพท์ ฉันมักจะ...</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              value="D"
+              id="q10d"
+            />
+            <label class="form-check-label" for="q10d"
+              >1) อยากรู้ว่าเขาอยากให้ฉันทำอะไร</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              value="I"
+              id="q10i"
+            />
+            <label class="form-check-label" for="q10i"
+              >2) คุยกับคนที่โทรมา</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              value="S"
+              id="q10s"
+            />
+            <label class="form-check-label" for="q10s"
+              >3) อยากรู้ว่าฉันจะช่วยเขาได้อย่างไร</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              value="C"
+              id="q10c"
+            />
+            <label class="form-check-label" for="q10c"
+              >4) อยากรู้ว่าเขาโทรหาฉันทำไม</label
+            >
+          </div>
+        </div>
+        <div class="mt-3 mb-3">
+          <button type="button" id="submit" class="btn btn-primary">
+            ส่งแบบทดสอบ
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
